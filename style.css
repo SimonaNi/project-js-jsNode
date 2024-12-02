@@ -16,6 +16,7 @@ body{
     color: #f6e8be;
     margin: 10px;
     padding: 0 3% 3% 3%;
+    overflow-x: hidden;
 }
 div{
     padding: 2px;
@@ -40,6 +41,64 @@ h1, h2{
 #link{
     text-decoration: none;
     color: inherit;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1f1030;
+    color: #f6e8be;
+    transition: 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding-top: 20px;
+}
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #371a5a;
+}
+.sidebar-menu li a {
+    color: #f6e8be;
+    text-decoration: none;
+    display: block;
+}
+.sidebar-menu li a:hover {
+    background-color: #f5e0a0;
+    color: #1f1030;
+    border-radius: 5px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #f6e8be;
+    cursor: pointer;
+}
+
+.main-content-open {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content-open {
+        margin-left: 200px;
+    }
 }
 
 .button{
