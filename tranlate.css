@@ -1,0 +1,64 @@
+#workskin .text1,
+#workskin .text2, 
+#workskin .text3,
+#workskin .text4 {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+#workskin .text1::after{
+    content: 'About me:';
+}
+#workskin .text1:hover::after,
+#workskin .hovertext1:focus::after {
+    content: 'За мен:';
+    background-color: #f5e0a0;
+    display: inline;
+    color: #1f1030;
+    border-bottom: 1px solid #f6e8be;
+    position: relative;
+}
+
+
+#workskin .text2::after{
+    content: 'I am a student in New Bulgarian Univercity (NBU) and study Informatic Technologies - Technology for Computer Games.';
+}
+#workskin .text2:hover::after,
+#workskin .hovertext2:focus::after {
+    content: 'Аз съм стъдент в Нов Булгарски Университет (НБУ) и уча Информацйонни Технологии - Техонлогии за Видео Игри.';
+    background-color: #f5e0a0;
+    display: inline;
+    color: #1f1030;
+    border-bottom: 1px solid #f6e8be;
+    position: relative;
+}
+
+
+#workskin .text3::after{
+    content: 'I am currently learning front-end development, 3D modeling and game engines to help me with future prospects in the carreer I would like to persuit.';
+}
+#workskin .text3:hover::after,
+#workskin .hovertext3:focus::after {
+    content: 'В момента уча front-end девелъпмент, 3D моделиране и програми за правене на игри, за да може това да ми помогне в бъдещите кариерни проспекти.';
+    background-color: #f5e0a0;
+    display: inline;
+    color: #1f1030;
+    border-bottom: 1px solid #f6e8be;
+    position: relative;
+}
+
+
+#workskin .text4::after{
+    content: 'You can leave a coment here: ';
+}
+#workskin .text4:hover::after,
+#workskin .hovertext4:focus::after {
+    content: 'Можете да оставите коментар тук: ';
+    background-color: #f5e0a0;
+    display: inline;
+    color: #1f1030;
+    border-bottom: 1px solid #f6e8be;
+    position: relative;
+}
+
