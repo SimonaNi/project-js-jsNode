@@ -21,19 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
 const sidebar = document.getElementById('sidebar');
 const openBtn = document.getElementById('openBtn');
 const closeBtn = document.getElementById('closeBtn');
 const mainContent = document.getElementById('main-content');
 
-// Open the sidebar
 openBtn.addEventListener('click', () => {
-    sidebar.style.left = '0'; // Bring the sidebar into view
-    mainContent.classList.add('main-content-open'); // Push main content to the side
+    sidebar.style.left = '0';
+    mainContent.classList.add('main-content-open');
 });
 
-// Close the sidebar
+
 closeBtn.addEventListener('click', () => {
-    sidebar.style.left = '-250px'; // Hide the sidebar
-    mainContent.classList.remove('main-content-open'); // Reset main content
+    sidebar.style.left = '-250px';
+    mainContent.classList.remove('main-content-open');
 });

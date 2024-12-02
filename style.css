@@ -53,14 +53,14 @@ h1, h2{
     background-color: #1f1030;
     color: #f6e8be;
     transition: 0.3s;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding-top: 20px;
 }
 .sidebar-menu {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
 }
 .sidebar-menu li {
     padding: 10px 20px;
@@ -73,8 +73,8 @@ h1, h2{
 }
 .sidebar-menu li a:hover {
     background-color: #f5e0a0;
+    border-radius: 10px;
     color: #1f1030;
-    border-radius: 5px;
 }
 .close-btn {
     position: absolute;
@@ -85,6 +85,9 @@ h1, h2{
     border: none;
     color: #f6e8be;
     cursor: pointer;
+}
+.close-btn:hover{
+    padding: 0 10px;
 }
 
 .main-content-open {
