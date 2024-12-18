@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const commText = commInput.value.trim();
 
         if (commText === "") {
-            alert("You need to have text in your comment :)");
+            alert("Brevity is the soul of wit, but you need to have text in your comment :)");
             return;
         }
 

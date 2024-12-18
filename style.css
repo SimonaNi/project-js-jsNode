@@ -141,6 +141,12 @@ button:hover{
     max-width: 350px;
     max-height: fit-content;
 }
+.modelContainer{
+    margin: 2%;
+    border: 3px solid #371a5a;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
 
 .container{
