@@ -165,22 +165,73 @@ button:hover{
 .boxForComm{
     background-color: #f6e8be;
     border: 3px solid #f5e0a0;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #371a5a;
     font-family: inherit;
     font-size: inherit;
     height: 50px;
     width: 300px;
+    resize: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+
 }
 .commContainer{
     background-color: #f5e0a0;
     border: 3px solid #f6e8be;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #1f1030;
     font-family: inherit;
     font-size: inherit;
-    height: 50px;
     width: 300px;
     flex-wrap: wrap;
+    word-wrap: break-word; /*long words the next line*/
+    white-space: pre-wrap; /*wrap text */
     margin: 2px;
+    padding: 5px;
+}
+
+.login{
+    background-color: #f6e8be;
+    border: 3px solid #f5e0a0;
+    border-radius: 10px 10px 0 0;
+    color: #371a5a;
+    font-family: inherit;
+    font-size: inherit;
+}
+.login2{
+    
+    background-color: #f6e8be;
+    border: 3px solid #f5e0a0;
+    border-radius: 0 0 10px 10px;
+    color: #371a5a;
+    font-family: inherit;
+    font-size: inherit;
+}
+.signup{
+    background-color: #f6e8be;
+    border: 3px solid #f5e0a0;
+    border-radius: 10px 10px 0 0;
+    color: #371a5a;
+    font-family: inherit;
+    font-size: inherit;
+}
+.signup2{
+    
+    background-color: #f6e8be;
+    border: 3px solid #f5e0a0;
+    color: #371a5a;
+    font-family: inherit;
+    font-size: inherit;
+}
+.signup3{
+    
+    background-color: #f6e8be;
+    border: 3px solid #f5e0a0;
+    border-radius: 0 0 10px 10px;
+    color: #371a5a;
+    font-family: inherit;
+    font-size: inherit;
 }
