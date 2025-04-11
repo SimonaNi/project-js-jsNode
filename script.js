@@ -3,6 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const postButton = document.getElementById("postBtn");
     const commsContainer = document.getElementById("comments");
 
+    //load comments when the page loads
+    fetch("http://localhost:3000/comments")
+    .then(response => response.json())
+    .then(data => {
+        commsContainer.innerHTML = ""; //clear before adding
+        data.forEach(comment => {
+            const commDiv = document.createElement("div");
+            commDiv.className = "commContainer";
+            commDiv.textContent = comment.text;
+            commsContainer.appendChild(commDiv);
+        });
+    })
+    .catch(error => console.error("Error fetching comments:", error));
+
     postButton.addEventListener("click", () => {
         const commText = commInput.value.trim();
 
@@ -11,21 +25,25 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        fetch("http://localhost:3000/comments", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text: commText })
+        })
+        .then(response => response.json())
+        .then(data => {
+        //post of new comm
         const commDiv = document.createElement("div");
         commDiv.className = "commContainer";
         commDiv.textContent = commText;
 
         commsContainer.appendChild(commDiv);
 
-        commInput.value = "";
+        commInput.value = "";})
+        .catch(error => console.error("Error posting comment:", error));
     });
 });
 
-
-const sidebar = document.getElementById('sidebar');
-const openBtn = document.getElementById('openBtn');
-const closeBtn = document.getElementById('closeBtn');
-const mainContent = document.getElementById('main-content');
 
 openBtn.addEventListener('click', () => {
     sidebar.style.left = '0';
